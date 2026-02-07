@@ -15,7 +15,7 @@
         .logo { font-size: 1.6rem; font-weight: bold; color: var(--primary); }
 
         .hero { 
-            height: 60vh; 
+            height: 50vh; 
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero.jpg'); 
             background-size: cover; background-position: center; 
             display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;
@@ -28,14 +28,21 @@
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-bottom: 5px solid var(--primary); transition: 0.3s; }
         .card:hover { transform: translateY(-10px); }
-        
-        /* Updated to look in 'images' folder */
-        .card img { width: 100%; height: 250px; object-fit: cover; display: block; background: #eee; }
-        
+        .card img { width: 100%; height: 230px; object-fit: cover; display: block; background: #eee; }
         .card-body { padding: 20px; }
-        .price { font-size: 1.5rem; color: var(--primary); font-weight: bold; margin: 10px 0; }
         
+        /* Color Swatches */
+        .color-options { display: flex; gap: 8px; margin: 15px 0; align-items: center; }
+        .color-dot { width: 18px; height: 18px; border-radius: 50%; border: 1px solid #ddd; }
+        
+        .price { font-size: 1.5rem; color: var(--primary); font-weight: bold; margin: 5px 0; }
         .btn { background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: block; text-align: center; margin-top: 15px; border: none; cursor: pointer; }
+
+        /* Reviews Section */
+        .reviews-container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .review-card { padding: 20px; border-bottom: 1px solid #eee; }
+        .stars { color: #f1c40f; font-size: 1.1rem; margin-bottom: 5px; }
+
         .whatsapp-btn { background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
         footer { background: #222; color: white; text-align: center; padding: 40px; }
     </style>
@@ -48,55 +55,87 @@
     </nav>
 
     <div class="hero">
-        <h1 style="font-size: 3.5rem;">MNR MOTORS PERNAMBUT</h1>
-        <p>Authorized Gaura Electric Dealer</p>
-        <a href="#catalog" class="btn" style="display:inline-block; margin-top: 20px;">View Inventory</a>
+        <h1 style="font-size: 3rem;">MNR MOTORS</h1>
+        <p>Your Trusted Gaura Electric Dealer in Pernambut</p>
     </div>
 
     <div class="section" id="catalog">
-        <h2 class="section-title">Gaura Electric Scooters</h2>
+        <h2 class="section-title">Gaura Scooter Models</h2>
         <div class="grid">
+            <!-- G6 -->
             <div class="card">
-                <img src="images/g6.jpg" alt="Gaura G6" onerror="this.src='https://placehold.co/600x400?text=Upload+G6.jpg'">
+                <img src="images/g6.jpg" alt="Gaura G6" onerror="this.src='https://placehold.co/600x400?text=Gaura+G6'">
                 <div class="card-body">
                     <h3>Gaura Electric G6</h3>
                     <p class="price">₹ 99,999*</p>
+                    <div class="color-options">
+                        <span>Colors:</span>
+                        <div class="color-dot" style="background: white;"></div>
+                        <div class="color-dot" style="background: black;"></div>
+                        <div class="color-dot" style="background: silver;"></div>
+                    </div>
                     <p>Range: 100-140 km | 4-5 Hr Charge</p>
                     <a href="tel:9345295748" class="btn">Book Test Ride</a>
                 </div>
             </div>
+            <!-- G5 -->
             <div class="card">
-                <img src="images/g5.jpg" alt="Gaura G5" onerror="this.src='https://placehold.co/600x400?text=Upload+G5.jpg'">
+                <img src="images/g5.jpg" alt="Gaura G5" onerror="this.src='https://placehold.co/600x400?text=Gaura+G5'">
                 <div class="card-body">
                     <h3>Gaura Electric G5</h3>
                     <p class="price">₹ 79,999*</p>
+                    <div class="color-options">
+                        <span>Colors:</span>
+                        <div class="color-dot" style="background: red;"></div>
+                        <div class="color-dot" style="background: blue;"></div>
+                    </div>
                     <p>Range: 55 km+ | City Commuter</p>
                     <a href="tel:9345295748" class="btn">Inquire Now</a>
                 </div>
             </div>
+            <!-- Warrior -->
             <div class="card">
-                <img src="images/warrior.jpg" alt="Warrior 5G" onerror="this.src='https://placehold.co/600x400?text=Upload+Warrior.jpg'">
+                <img src="images/warrior.jpg" alt="Warrior 5G" onerror="this.src='https://placehold.co/600x400?text=Warrior+5G'">
                 <div class="card-body">
                     <h3>Warrior 5G</h3>
                     <p class="price">₹ 62,999 - ₹ 99,990</p>
+                    <div class="color-options">
+                        <span>Colors:</span>
+                        <div class="color-dot" style="background: gray;"></div>
+                        <div class="color-dot" style="background: #333;"></div>
+                    </div>
                     <p>Multiple Variants Available</p>
                     <a href="tel:9345295748" class="btn">Check Finance</a>
                 </div>
             </div>
+            <!-- Sniper -->
             <div class="card">
-                <img src="images/sniper.jpg" alt="Sniper 5G" onerror="this.src='https://placehold.co/600x400?text=Upload+Sniper.jpg'">
+                <img src="images/sniper.jpg" alt="Sniper 5G" onerror="this.src='https://placehold.co/600x400?text=Sniper+5G'">
                 <div class="card-body">
                     <h3>Sniper 5G</h3>
                     <p class="price">₹ 52,990 - ₹ 69,990</p>
+                    <div class="color-options">
+                        <span>Colors:</span>
+                        <div class="color-dot" style="background: red;"></div>
+                        <div class="color-dot" style="background: blue;"></div>
+                        <div class="color-dot" style="background: green;"></div>
+                        <div class="color-dot" style="background: orange;"></div>
+                    </div>
                     <p>Entry-Level | 4 Dynamic Colors</p>
                     <a href="tel:9345295748" class="btn">View Offers</a>
                 </div>
             </div>
+            <!-- Partner -->
             <div class="card">
-                <img src="images/partner.jpg" alt="Partner 5G" onerror="this.src='https://placehold.co/600x400?text=Upload+Partner.jpg'">
+                <img src="images/partner.jpg" alt="Partner 5G" onerror="this.src='https://placehold.co/600x400?text=Partner+5G'">
                 <div class="card-body">
                     <h3>Partner 5G</h3>
                     <p class="price">₹ 79,990*</p>
+                    <div class="color-options">
+                        <span>Colors:</span>
+                        <div class="color-dot" style="background: white;"></div>
+                        <div class="color-dot" style="background: #ddd;"></div>
+                    </div>
                     <p>Designed for Utility & Transport</p>
                     <a href="tel:9345295748" class="btn">Contact Dealer</a>
                 </div>
@@ -104,17 +143,38 @@
         </div>
     </div>
 
-    <div class="section" id="location" style="background:#fff;">
-        <h2 class="section-title">Visit Our Location</h2>
+    <!-- Google Reviews -->
+    <div class="section" id="reviews" style="background: #fff;">
+        <h2 class="section-title">Google Customer Reviews</h2>
+        <div class="reviews-container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div class="stars" style="font-size: 1.5rem;">★★★★★ 4.48</div>
+                <p>Based on verified customer feedback in Pernambut</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Best electric scooter showroom in Pernambut. Gaura G6 performance is amazing and service is very good."</p>
+                <div style="margin-top:10px; font-weight:bold;">- Kumar S.</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Authorized dealer with great support for documentation. Sniper 5G is perfect for my daily use."</p>
+                <div style="margin-top:10px; font-weight:bold;">- Abdul R.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="location">
+        <h2 class="section-title">Our Showroom</h2>
         <div style="width:100%; height:450px; border-radius:15px; overflow:hidden; border:1px solid #ddd;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.043594241617!2d78.7183!3d12.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzE1LjciTiA3OMKwNDMnMDUuOCJF!5e0!3m2!1sen!2sin!4v1625471234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
-    <a href="https://wa.me/919345295748" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    <a href="https://wa.me/919345295748" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat with Us</a>
 
     <footer>
-        <p>&copy; 2024 MNR Motors Pernambut. Authorized Gaura Dealer.</p>
+        <p>&copy; 2022 MNR Motors Pernambut. All Rights Reserved.</p>
     </footer>
 
 </body>
