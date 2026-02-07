@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MNR Motors | Gaura Electric Pernambut</title>
+    <title>MNR MOTORS EV HUB | Gaura Electric Pernambut</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --primary: #27ae60; --dark: #2c3e50; --light: #f4f7f6; --white: #ffffff; }
@@ -41,9 +41,12 @@
         .price { font-size: 1.5rem; color: var(--primary); font-weight: bold; margin: 5px 0; }
         .btn { background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: block; text-align: center; margin-top: 15px; border: none; cursor: pointer; }
 
-        .reviews-container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
-        .review-card { padding: 20px; border-bottom: 1px solid #eee; }
-        .stars { color: #f1c40f; font-size: 1.1rem; margin-bottom: 5px; }
+        /* Aligned Reviews Section */
+        .reviews-container { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; }
+        .review-stats { margin-bottom: 30px; }
+        .review-card { padding: 25px; border: 1px solid #eee; border-radius: 10px; margin-bottom: 20px; text-align: left; background: #fff; }
+        .stars { color: #f1c40f; font-size: 1.2rem; margin-bottom: 10px; }
+        .reviewer-name { font-weight: bold; color: var(--primary); margin-top: 10px; display: block; }
 
         .contact-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .contact-info i { color: var(--primary); margin-right: 10px; width: 20px; }
@@ -58,20 +61,20 @@
 <body>
 
     <nav>
-        <div class="logo">MNR MOTORS</div>
+        <div class="logo">MNR MOTORS EV HUB</div>
         <div style="font-weight: bold;"><i class="fas fa-phone"></i> 9345295748</div>
     </nav>
 
     <div class="hero">
-        <h1 style="font-size: 3rem;">MNR MOTORS</h1>
-        <p>Leading the Green Revolution in Pernambut</p>
+        <h1 style="font-size: 3rem;">MNR MOTORS EV HUB</h1>
+        <p>Your Premium Destination for Gaura Electric Scooters in Peranampattu</p>
     </div>
 
     <!-- EV Benefits -->
     <div class="section" style="background: white;">
         <h2 class="section-title">Why Switch to Electric?</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #666;">
-            At MNR Motors, we bring you high-performance electric scooters that save your money and protect our environment.
+            At MNR MOTORS EV HUB, we bring you high-performance electric scooters that save your money and protect our environment.
         </p>
         <div class="benefits-grid">
             <div class="benefit-card"><i class="fas fa-gas-pump"></i><h3>Zero Fuel Cost</h3><p>Charge at home for just a few rupees.</p></div>
@@ -142,12 +145,24 @@
         </div>
     </div>
 
-    <!-- Reviews -->
+    <!-- Aligned Reviews Section -->
     <div class="section" id="reviews" style="background: #fff;">
         <h2 class="section-title">Google Customer Reviews</h2>
         <div class="reviews-container">
-            <div style="text-align: center; margin-bottom: 20px;"><div class="stars">★★★★★ 4.48</div><p>Based on verified feedback in Pernambut</p></div>
-            <div class="review-card"><div class="stars">★★★★★</div><p>"Best electric scooter showroom in Pernambut."</p><div style="font-weight:bold;">- Kumar S.</div></div>
+            <div class="review-stats">
+                <div class="stars" style="font-size: 2rem;">★★★★★ 4.48</div>
+                <p><strong>MNR MOTORS EV HUB</strong> - Excellent Customer Service</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Best electric scooter showroom in Peranampattu. Highly recommended for Gaura scooters."</p>
+                <span class="reviewer-name">- Verified Google Customer</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Great service and support. The staff is very knowledgeable about EV technology."</p>
+                <span class="reviewer-name">- Local Guide</span>
+            </div>
         </div>
     </div>
 
@@ -155,26 +170,46 @@
     <div class="section" id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="contact-flex">
-            <div class="contact-info"><h3>Get In Touch</h3><br><p><i class="fas fa-phone"></i> +91 9345295748</p><p><i class="fas fa-map-marker-alt"></i> No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore</p></div>
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <br>
+                <p><i class="fas fa-phone"></i> +91 9345295748</p>
+                <p><i class="fas fa-map-marker-alt"></i> No 04, Shivraj Nagar, Gudiyattam Road, Peranampattu</p>
+            </div>
             <form>
                 <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your name"></div>
                 <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="Enter mobile number"></div>
-                <div class="form-group"><label>Model Interested In</label><select><option>Select a Model</option><option>Gaura G6</option><option>Gaura G5</option><option>Warrior 5G</option><option>Sniper 5G</option><option>Partner 5G</option></select></div>
+                <div class="form-group"><label>Model Interested In</label>
+                    <select>
+                        <option>Select a Model</option>
+                        <option>Gaura G6</option>
+                        <option>Gaura G5</option>
+                        <option>Warrior 5G</option>
+                        <option>Sniper 5G</option>
+                        <option>Partner 5G</option>
+                    </select>
+                </div>
                 <button type="button" class="btn" style="width: 100%;">Submit Inquiry</button>
             </form>
         </div>
     </div>
 
-    <!-- Location -->
+    <!-- Updated Hub Location -->
     <div class="section" id="location" style="background:#fff;">
         <h2 class="section-title">Showroom Location</h2>
-        <p style="text-align:center; font-size:1.2rem; margin-bottom: 20px;">No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore - 635810<br><strong>Landmark:</strong> Near Puthu Kovil, MGR Nagar</p>
-        <div style="width:100%; height:450px; border-radius:15px; overflow:hidden; border:1px solid #ddd;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.043594241617!2d78.7183!3d12.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzE1LjciTiA3OMKwNDMnMDUuOCJF!5e0!3m2!1sen!2sin!4v1625471234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <p style="text-align:center; font-size:1.1rem; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <strong>MNR MOTORS EV HUB</strong><br>
+            No 04, Shivraj Nagar, Gudiyattam Road, Peranampattu, Vellore, Tamil Nadu 635810<br>
+            <span style="color:var(--primary); font-size: 0.9rem;">Plus Code: WPVC+9R Peranampattu</span>
+        </p>
+        <div style="width:100%; height:450px; border-radius:15px; overflow:hidden; border:1px solid #ddd;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.043594241617!2d78.7183!3d12.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzE1LjciTiA3OMKwNDMnMDUuOCJF!5e0!3m2!1sen!2sin!4v1625471234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
 
     <a href="https://wa.me/919345295748" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat with Us</a>
 
-    <footer><p>&copy; 2022 MNR Motors Pernambut. All Rights Reserved.</p></footer>
+    <footer><p>&copy; 2022 MNR MOTORS EV HUB. All Rights Reserved.</p></footer>
 
 </body>
 </html>
