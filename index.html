@@ -45,7 +45,6 @@
         .review-card { padding: 20px; border-bottom: 1px solid #eee; }
         .stars { color: #f1c40f; font-size: 1.1rem; margin-bottom: 5px; }
 
-        /* Contact Section CSS */
         .contact-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .contact-info i { color: var(--primary); margin-right: 10px; width: 20px; }
         .form-group { margin-bottom: 15px; }
@@ -65,34 +64,23 @@
 
     <div class="hero">
         <h1 style="font-size: 3rem;">MNR MOTORS</h1>
-        <p>Your Trusted Gaura Electric Dealer in Pernambut</p>
+        <p>Leading the Green Revolution in Pernambut</p>
     </div>
 
-    <!-- About EV Benefits Section -->
+    <!-- EV Benefits -->
     <div class="section" style="background: white;">
         <h2 class="section-title">Why Switch to Electric?</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: #666;">
-            Electric Vehicles (EV) are the future of transport. At MNR Motors, we bring you high-performance electric scooters that save your money and protect our environment.
+            At MNR Motors, we bring you high-performance electric scooters that save your money and protect our environment.
         </p>
         <div class="benefits-grid">
-            <div class="benefit-card">
-                <i class="fas fa-gas-pump"></i>
-                <h3>Zero Fuel Cost</h3>
-                <p>No more petrol bills. Charge your scooter at home for just a few rupees.</p>
-            </div>
-            <div class="benefit-card">
-                <i class="fas fa-leaf"></i>
-                <h3>Eco-Friendly</h3>
-                <p>Zero tailpipe emissions. Help keep Pernambut clean and green.</p>
-            </div>
-            <div class="benefit-card">
-                <i class="fas fa-tools"></i>
-                <h3>Low Maintenance</h3>
-                <p>Fewer moving parts means fewer repairs and much lower service costs.</p>
-            </div>
+            <div class="benefit-card"><i class="fas fa-gas-pump"></i><h3>Zero Fuel Cost</h3><p>Charge at home for just a few rupees.</p></div>
+            <div class="benefit-card"><i class="fas fa-leaf"></i><h3>Eco-Friendly</h3><p>Zero tailpipe emissions.</p></div>
+            <div class="benefit-card"><i class="fas fa-tools"></i><h3>Low Maintenance</h3><p>Fewer repairs and lower service costs.</p></div>
         </div>
     </div>
 
+    <!-- ALL MODELS CATALOG -->
     <div class="section" id="catalog">
         <h2 class="section-title">Gaura Scooter Models</h2>
         <div class="grid">
@@ -102,89 +90,91 @@
                 <div class="card-body">
                     <h3>Gaura Electric G6</h3>
                     <p class="price">₹ 99,999*</p>
-                    <div class="color-options">
-                        <span>Colors:</span>
-                        <div class="color-dot" style="background: white;"></div>
-                        <div class="color-dot" style="background: black;"></div>
-                        <div class="color-dot" style="background: silver;"></div>
-                    </div>
+                    <div class="color-options"><span>Colors:</span><div class="color-dot" style="background: white;"></div><div class="color-dot" style="background: black;"></div><div class="color-dot" style="background: silver;"></div></div>
                     <p>Range: 100-140 km | 4-5 Hr Charge</p>
                     <a href="tel:9345295748" class="btn">Book Test Ride</a>
                 </div>
             </div>
-            <!-- Add G5, Warrior, Sniper, Partner cards here as per your original file -->
+            <!-- G5 -->
+            <div class="card">
+                <img src="images/g5.jpg" alt="Gaura G5" onerror="this.src='https://placehold.co/600x400?text=Gaura+G5'">
+                <div class="card-body">
+                    <h3>Gaura Electric G5</h3>
+                    <p class="price">₹ 79,999*</p>
+                    <div class="color-options"><span>Colors:</span><div class="color-dot" style="background: red;"></div><div class="color-dot" style="background: blue;"></div></div>
+                    <p>Range: 55 km+ | City Commuter</p>
+                    <a href="tel:9345295748" class="btn">Inquire Now</a>
+                </div>
+            </div>
+            <!-- Warrior -->
+            <div class="card">
+                <img src="images/warrior.jpg" alt="Warrior 5G" onerror="this.src='https://placehold.co/600x400?text=Warrior+5G'">
+                <div class="card-body">
+                    <h3>Warrior 5G</h3>
+                    <p class="price">₹ 62,999 - ₹ 99,990</p>
+                    <div class="color-options"><span>Colors:</span><div class="color-dot" style="background: gray;"></div><div class="color-dot" style="background: #333;"></div></div>
+                    <p>Multiple Variants Available</p>
+                    <a href="tel:9345295748" class="btn">Check Finance</a>
+                </div>
+            </div>
+            <!-- Sniper -->
+            <div class="card">
+                <img src="images/sniper.jpg" alt="Sniper 5G" onerror="this.src='https://placehold.co/600x400?text=Sniper+5G'">
+                <div class="card-body">
+                    <h3>Sniper 5G</h3>
+                    <p class="price">₹ 52,990 - ₹ 69,990</p>
+                    <div class="color-options"><span>Colors:</span><div class="color-dot" style="background: red;"></div><div class="color-dot" style="background: blue;"></div><div class="color-dot" style="background: green;"></div><div class="color-dot" style="background: orange;"></div></div>
+                    <p>Entry-Level | 4 Dynamic Colors</p>
+                    <a href="tel:9345295748" class="btn">View Offers</a>
+                </div>
+            </div>
+            <!-- Partner -->
+            <div class="card">
+                <img src="images/partner.jpg" alt="Partner 5G" onerror="this.src='https://placehold.co/600x400?text=Partner+5G'">
+                <div class="card-body">
+                    <h3>Partner 5G</h3>
+                    <p class="price">₹ 79,990*</p>
+                    <div class="color-options"><span>Colors:</span><div class="color-dot" style="background: white;"></div><div class="color-dot" style="background: #ddd;"></div></div>
+                    <p>Designed for Utility & Transport</p>
+                    <a href="tel:9345295748" class="btn">Contact Dealer</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Google Reviews Section -->
+    <!-- Reviews -->
     <div class="section" id="reviews" style="background: #fff;">
         <h2 class="section-title">Google Customer Reviews</h2>
         <div class="reviews-container">
-            <div style="text-align: center; margin-bottom: 20px;">
-                <div class="stars" style="font-size: 1.5rem;">★★★★★ 4.48</div>
-                <p>Based on verified customer feedback in Pernambut</p>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p>"Best electric scooter showroom in Pernambut. Gaura G6 performance is amazing and service is very good."</p>
-                <div style="margin-top:10px; font-weight:bold;">- Kumar S.</div>
-            </div>
+            <div style="text-align: center; margin-bottom: 20px;"><div class="stars">★★★★★ 4.48</div><p>Based on verified feedback in Pernambut</p></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Best electric scooter showroom in Pernambut."</p><div style="font-weight:bold;">- Kumar S.</div></div>
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Contact Form -->
     <div class="section" id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="contact-flex">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <br>
-                <p><i class="fas fa-phone"></i> +91 9345295748</p>
-                <p><i class="fas fa-map-marker-alt"></i> No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore</p>
-                <p><strong>Landmark:</strong> Near Puthu Kovil, MGR Nagar</p>
-            </div>
+            <div class="contact-info"><h3>Get In Touch</h3><br><p><i class="fas fa-phone"></i> +91 9345295748</p><p><i class="fas fa-map-marker-alt"></i> No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore</p></div>
             <form>
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label>Mobile Number</label>
-                    <input type="tel" placeholder="Enter mobile number">
-                </div>
-                <div class="form-group">
-                    <label>Model Interested In</label>
-                    <select>
-                        <option>Select a Model</option>
-                        <option>Gaura G6</option>
-                        <option>Gaura G5</option>
-                        <option>Warrior 5G</option>
-                        <option>Sniper 5G</option>
-                        <option>Partner 5G</option>
-                    </select>
-                </div>
+                <div class="form-group"><label>Full Name</label><input type="text" placeholder="Enter your name"></div>
+                <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="Enter mobile number"></div>
+                <div class="form-group"><label>Model Interested In</label><select><option>Select a Model</option><option>Gaura G6</option><option>Gaura G5</option><option>Warrior 5G</option><option>Sniper 5G</option><option>Partner 5G</option></select></div>
                 <button type="button" class="btn" style="width: 100%;">Submit Inquiry</button>
             </form>
         </div>
     </div>
 
-    <!-- Showroom Location Section -->
+    <!-- Location -->
     <div class="section" id="location" style="background:#fff;">
         <h2 class="section-title">Showroom Location</h2>
-        <p style="text-align:center; font-size:1.2rem; margin-bottom: 20px;">
-            No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore - 635810<br>
-            <strong>Landmark:</strong> Near Puthu Kovil, MGR Nagar
-        </p>
-        <div style="width:100%; height:450px; border-radius:15px; overflow:hidden; border:1px solid #ddd;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.043594241617!2d78.7183!3d12.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzE1LjciTiA3OMKwNDMnMDUuOCJF!5e0!3m2!1sen!2sin!4v1625471234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <p style="text-align:center; font-size:1.2rem; margin-bottom: 20px;">No. 9, Sivaraj Nagar, High Road, Pernambut, Vellore - 635810<br><strong>Landmark:</strong> Near Puthu Kovil, MGR Nagar</p>
+        <div style="width:100%; height:450px; border-radius:15px; overflow:hidden; border:1px solid #ddd;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.043594241617!2d78.7183!3d12.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU2JzE1LjciTiA3OMKwNDMnMDUuOCJF!5e0!3m2!1sen!2sin!4v1625471234567!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
     </div>
 
     <a href="https://wa.me/919345295748" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat with Us</a>
 
-    <footer>
-        <p>&copy; 2022 MNR Motors Pernambut. All Rights Reserved.</p>
-    </footer>
+    <footer><p>&copy; 2022 MNR Motors Pernambut. All Rights Reserved.</p></footer>
 
 </body>
 </html>
